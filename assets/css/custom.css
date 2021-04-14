@@ -1,0 +1,409 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;;
+}
+:root{ 
+    --primary-color: #c21e5e;
+    --secondary-color: #902467;
+  --background-color: #77Cabe;
+    --orange-color: #faa51a;
+   --primary1-color: #e92264;
+ --text-body:#444;
+
+}
+body{
+    background: #92c9c149;
+}
+
+.login-form{
+    
+    background-color: white;
+    box-shadow: 1px 2px 12px #1f4e4749;
+    width: 70%;
+    margin: 1rem auto;
+    padding: .5rem .8rem .6rem .5rem;
+    border-radius: 2px;
+}
+.login-form .title{
+    margin: .4rem auto 1rem auto;
+    text-align: center;
+    letter-spacing: .1rem;
+    color: var(--orange-color);
+}
+.login-form form{
+    position: relative;
+   width: 90%;
+   margin: 2px auto;
+}
+
+.error{
+    text-align: center;
+text-transform: capitalize;
+    color: red;
+    background: none;
+    border: none;
+}
+.loginbtn{
+    position: relative;
+    width: 100%;
+    padding: .4rem 2rem;
+    text-align: center;
+    background: var(--background-color);
+    border: none;
+}
+.loginbtn:hover{
+ background: #3dc2ac;
+}
+.home{
+    margin:8px 3px;
+    display: flex;
+  
+}
+.home a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: var(--orange-color);
+    transition: color .3s ease-in-out;
+}
+.home a:hover{
+    color: var(--primary1-color);
+}
+
+@media(min-width:800px){
+   
+    .login-form{
+        width: 40%;
+        margin: 7rem  auto;
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------------------- admin HOME.PHP------------------------------------------------------------ */
+ 
+.topMenu{
+    position: fixed;
+    right:0;
+    top:48px;
+    padding:5px;
+    z-index:200;
+    height: 35px;
+  }
+  @media screen and (max-width:776px) {
+      .topMenu{
+          position: fixed;
+          top: 85px;
+      }
+  }
+  .topMenu ul{
+      display: flex;
+      justify-content: space-between;
+  }
+  .topMenu ul li{
+      margin-left: 10px;
+  }
+  .homeLink a{
+   color: var(--text-body);
+   transition: color .4s ease-in-out;
+  }
+.homeLink a:hover{
+    color: var(--orange-color) ;
+}
+
+
+/* -----------------------------INSERTEMPLOYEE.PHP */
+.insertEmployee{
+    position: relative;
+    width: 100%;
+   
+    padding: 30px 25px;
+    background:transparent;
+    box-shadow: 1px 3px 15px #1f4e4749;
+   margin: 30px auto;
+   font-size: 1rem;
+}
+
+
+.insert{
+    text-align: center;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+.insertEmployee h3{
+    text-align: center;
+    margin: 5px auto;
+    color: var(--orange-color);
+    letter-spacing: .05rem;
+    font-size: 1.5rem;
+}
+.insertEmployee .btn{
+    margin: 5px auto;
+    padding: 6px 18px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    background: var(--orange-color);
+    outline: none;
+    border: 2px solid var(--orange-color);
+    color: #fff;
+    transition: background .3s ease-in-out, border .3s ease-in-out;
+
+}
+.insertEmployee .btn:hover{
+    background: #fff;
+    color: var(--orange-color);
+}
+@media (min-width:776px){
+    .insertEmployee{
+        font-size: 1.1rem;
+    }
+    .insertEmployee h3{
+        font-size: 1.8rem;
+    }
+    .insertEmployee .btn{
+        margin: 5px auto;
+        padding: 8px 25px;
+       
+    }
+}
+
+/*-------- edit page------ */
+
+
+
+.searchInformation {
+    margin: 30px auto 0 auto;
+    width: 70%;
+  
+}
+.searchInformation h3, .results{
+    text-align: center;
+    color: var(--orange-color);
+}
+@media screen and (max-width:776px) {
+    
+    .searchInformation h3, .results{
+  font-size: 1.4rem !important;
+ } 
+}
+/* --------BUTTON EMPLOYEEE */
+.searchBtnE{
+    background: var(--primary1-color);
+    padding: 8px 50px;
+    color: #fff;
+  align-items: center;
+  margin: 2px auto;
+}
+.searchBtnE:hover{
+    background: var(--primary-color);
+    color: #fff;
+}
+/* --------BUTTON STUDENT */
+.searchBtnS{
+    background: #3dc2ac;
+    padding: 8px 50px;
+    color: #fff;
+  align-items: center;
+  margin: 2px auto;
+}
+.searchBtnS:hover{
+    background: var(--background-color);
+    color: #fff;
+}
+/* --------- */
+.results{
+    margin:2px 0 20px 10px;
+    margin-top: 20px !important;
+
+}
+#table{
+    margin:10px  auto 50px auto;
+    overflow:scroll;
+    height: 400px;
+}
+.table tr td{
+    text-transform: capitalize !important;
+}
+/* .table-head{
+    position: ;
+} */
+
+#table .update{
+    background: var(--orange-color);
+    color: #fff;
+    padding: 5px 12px;
+    margin: auto;
+    transition: background .3s ease-out;
+    border-radius: 2px;
+}
+#table .update:hover{
+    background: var(--primary1-color);
+}
+
+
+/* ---------------------ACTIVE/UNACTIVE PAGES */
+ #activepg, #unactivepg{
+    margin: 20px auto !important;
+}
+.progress{
+    text-align: center;
+    height:30px;
+    font-size: 1rem;
+}
+.progress .progress-bar{
+    width: 100%;
+    color: #fff;
+
+}
+
+
+/* -----------------DELETE pages */
+#table .delete{
+    background: red;
+    color: #fff;
+    padding: 5px 12px;
+    margin: auto;
+    transition: background .3s ease-out;
+    border-radius: 2px;
+}
+#table .delete:hover{
+    background: rgb(168, 4, 4);
+}
+
+
+
+
+/* ----------------------------allStudents.php */
+.allAbout{
+    transition: background .4s ease-in-out;
+    width: 70%;
+    border-bottom: 2px solid var(--primary1-color);
+    margin: 5px auto;
+    margin-top: 2px;
+    padding-top: 10px;
+}
+.allAbout:hover{
+    background: #77cabed2;
+}
+.allAbout p{
+    width: 70%;
+    /* border-bottom: 2px solid var(--primary1-color); */
+    margin: 5px auto;
+}
+.filter{
+        background: #3dc2ac;
+        padding: 8px 50px;
+        color: #fff;
+      align-items: center;
+      margin: 2px auto;
+    }
+    .filter:hover{
+        background: var(--background-color);
+        color: #fff;
+    }
+    .allResults{
+        margin-top: 2rem !important;
+    }
+.name-link{
+    color: var(--primary1-color);
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.btnAll{
+    margin-bottom: 10px;
+}
+
+/* ----------------individualRecords */
+.displayInfo{
+    padding: 10px 20px;
+     margin: 30px auto;
+     text-transform: capitalize;
+}
+.displayInfo h3{
+    color: var(--orange-color);
+}
+
+/* for student page */
+.displayinfor{ 
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px 15px;
+    background: #77cabe23 !important;
+}
+.displayinfor .row{
+    margin: 20px auto !important;
+}
+
+.displayInfo h4{
+    font-size: 1.3rem;
+}
+.displayInfo p{
+    font-size: 1rem;
+    color: var(--primary1-color);
+}
+
+/* --for employee page */
+.display-infor{ 
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px 15px;
+    background: #c21e5d18 !important;
+}
+.display-infor .row{
+    margin: 20px auto !important;
+    
+}
+
+
+.go-to-page{
+    background: #3dc2ac;  
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 5px;
+font-size: 1rem;
+transition: background .4s ease-in-out;
+}
+.go-to-page:hover{
+    /* background: rgb(228, 221, 221); */
+    color: #fff;
+    background: #77Cabe;
+}
+.pgeCert{
+    background:#e92264;
+}
+.pgeCert:hover{
+    background: #c21e5e;
+    color:#fff;
+}
+
+
+/* ------------------for certificate page--------- */
+/* .print{
+ text-align: center;
+}
+.print:hover{
+    background: var(--background-color) !important;
+} */
+
+
+
+/* ---------footer------ */
+
+#footer{
+    position: relative;
+    width:100%;
+  }
+  @media screen and (max-width:776px) {
+          #footer{
+    z-index: 300;
+ 
+          }
+  }
+
+ 
